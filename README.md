@@ -22,7 +22,7 @@ Then select the ones you wish to install.
 
 ## MCP Server
 
-The plugin registers the LetMeSendEmail MCP server at `https://mcp.letmesend.email/` (streamable HTTP) with 34 tools. It authenticates via OAuth — supported clients walk you through sign-in on first connect. For headless use, a Bearer API key works instead:
+The plugin registers the LetMeSendEmail MCP server at `https://mcp.letmesend.email` (streamable HTTP) with 34 tools. It authenticates via OAuth — supported clients walk you through sign-in on first connect. For headless use, a Bearer API key works instead:
 
 ```
 Authorization: Bearer <api-key>

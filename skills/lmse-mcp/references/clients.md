@@ -1,6 +1,6 @@
 # Client setup
 
-Server: `https://mcp.letmesend.email/` (streamable HTTP), 34 tools.
+Server: `https://mcp.letmesend.email` (streamable HTTP), 34 tools.
 
 OAuth is the primary path: point the client at the server URL and it
 discovers `https://mcp.letmesend.email/.well-known/oauth-protected-resource`

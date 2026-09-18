@@ -1,6 +1,6 @@
 ---
 name: lmse-mcp
-description: Use when connecting an AI client to the LetMeSendEmail MCP server or debugging its responses — authentication setup per client, the three mailbox ability tiers, error codes with suggested actions, and cursor pagination. Always use this skill when tools/list or tools/call against https://mcp.letmesend.email/ misbehaves, or when choosing what key abilities an agent needs.
+description: Use when connecting an AI client to the LetMeSendEmail MCP server or debugging its responses — authentication setup per client, the three mailbox ability tiers, error codes with suggested actions, and cursor pagination. Always use this skill when tools/list or tools/call against https://mcp.letmesend.email misbehaves, or when choosing what key abilities an agent needs.
 license: MIT
 metadata:
     author: LetMeSend.Email
@@ -19,7 +19,7 @@ references:
 
 # LetMeSendEmail MCP
 
-- **URL:** `https://mcp.letmesend.email/` (streamable HTTP), server name `LetMeSendEmail`, 34 tools
+- **URL:** `https://mcp.letmesend.email` (streamable HTTP), server name `LetMeSendEmail`, 34 tools
 - **Auth:** `Authorization: Bearer <api-key>` — dashboard user menu → API keys (copy the full value shown once at creation)
 - **Discovery:** `GET https://letmesend.email/mcp.json` (also served as `/.well-known/mcp.json`) lists tools + client configs live
 

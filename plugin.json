@@ -8,6 +8,7 @@
     "url": "https://letmesend.email"
   },
   "homepage": "https://letmesend.email",
+  "repository": "https://github.com/letmesendemail/letmesendemail-skills",
   "license": "MIT",
   "keywords": ["email", "letmesendemail", "lmse", "smtp", "mailbox", "campaigns", "agent-inbox"]
 }
