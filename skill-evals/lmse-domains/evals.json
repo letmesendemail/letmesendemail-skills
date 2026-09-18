@@ -31,6 +31,17 @@
         "States verification is mandatory before sending",
         "Does not offer a workaround"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Build a welcome email for my brand. What logo and colors should it use?",
+      "expected_output": "Calls domain-business-info-get, uses stored logo/brand colors, checks defaults_applied for uncustomized branding.",
+      "files": [],
+      "expectations": [
+        "Fetches business info via domain-business-info-get (does not invent branding)",
+        "Uses exact placeholder keys from the response",
+        "Flags default-valued branding (e.g. missing logo) instead of silently shipping generic styling"
+      ]
     }
   ]
 }

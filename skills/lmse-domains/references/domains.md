@@ -1,8 +1,9 @@
 # Domains
 
 - `domains-list{}` - all domains on the account with verification status.
-- `domains-get{id}` - full record **including the DNS records to publish** (SPF, DKIM, DMARC + any provider-specific entries). This is the source of truth - do not guess record values.
+- `domains-get{id}` - full record: DNS records to publish (SPF, DKIM, DMARC + any provider-specific entries - the source of truth, do not guess values), plus tracking flags and sending status.
 - `domains-verify{id}` - re-checks DNS propagation and flips status on success.
+- `domain-business-info-get{id}` - business settings, logo, brand colors, typography and social placeholders for email building. Canonical defaults are merged in for uncustomized keys; `defaults_applied` lists which values are defaults (e.g. no logo uploaded yet).
 
 **Setup playbook:**
 1. Add the domain (dashboard) → `domains-get` for required records.

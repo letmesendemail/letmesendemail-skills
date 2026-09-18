@@ -1,6 +1,6 @@
 # Client setup
 
-Server: `https://mcp.letmesend.email` (streamable HTTP), 34 tools.
+Server: `https://mcp.letmesend.email` (streamable HTTP), 35 tools.
 
 OAuth is the primary path: point the client at the server URL and it
 discovers `https://mcp.letmesend.email/.well-known/oauth-protected-resource`
@@ -23,4 +23,4 @@ options below when using OAuth).
 - **Warp** (`letmesendemail`): `{serverUrl}`
 - **OpenClaw**: `openclaw mcp add letmesendemail --url <url> --transport streamable-http`
 
-After connecting, verify with `tools/list` (34 tools across pages) then `tools/call mailboxes-list {}`.
+After connecting, verify with `tools/list` (35 tools across pages) then `tools/call mailboxes-list {}`.

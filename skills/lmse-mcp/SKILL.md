@@ -19,7 +19,7 @@ references:
 
 # LetMeSendEmail MCP
 
-- **URL:** `https://mcp.letmesend.email` (streamable HTTP), server name `LetMeSendEmail`, 34 tools
+- **URL:** `https://mcp.letmesend.email` (streamable HTTP), server name `LetMeSendEmail`, 35 tools
 - **Auth:** `Authorization: Bearer <api-key>` - dashboard user menu → API keys (copy the full value shown once at creation)
 - **Discovery:** `GET https://letmesend.email/mcp.json` (also served as `/.well-known/mcp.json`) lists tools + client configs live
 
