@@ -10,17 +10,17 @@ ability tiers are chosen there). Bearer is the headless alternative:
 options below when using OAuth).
 
 - **Claude Web**: Settings → Connectors → Add custom connector → server URL.
-- **Claude Code**: `claude mcp add --transport http letmesendemail <url>` (+ `--header "Authorization: Bearer <key>"` for Bearer mode)
+- **Claude Code**: `claude mcp add --transport http lmse <url>` (+ `--header "Authorization: Bearer <key>"` for Bearer mode)
 - **Claude Desktop**: Settings → Connectors → Add custom connector → server URL.
-- **Codex CLI**: `codex mcp add letmesendemail --url <url>` (+ `--bearer-token-env-var LMSE_API_KEY` for Bearer mode)
-- **Cursor** (MCP settings → `mcpServers.letmesendemail`): `{url}` (+ `headers` for Bearer mode)
-- **GitHub Copilot** (VS Code `mcp.servers.letmesendemail`): `{type: http, url}` (+ `headers` for Bearer mode)
-- **opencode** (`opencode.json` → `mcp.letmesendemail`): `{type: remote, url, enabled: true}` (+ `headers` for Bearer mode)
-- **Devin** (`mcpServers.letmesendemail`): `{transport: HTTP, url}`
-- **Zed** (`context_servers.letmesendemail`): `{url}`
-- **Antigravity** (`mcpServers.letmesendemail`): `{serverUrl}`
-- **Gemini** (`mcpServers.letmesendemail`): `{httpUrl}`
-- **Warp** (`letmesendemail`): `{serverUrl}`
-- **OpenClaw**: `openclaw mcp add letmesendemail --url <url> --transport streamable-http`
+- **Codex CLI**: `codex mcp add lmse --url <url>` (+ `--bearer-token-env-var LMSE_API_KEY` for Bearer mode)
+- **Cursor** (MCP settings → `mcpServers.lmse`): `{url}` (+ `headers` for Bearer mode)
+- **GitHub Copilot** (VS Code `mcp.servers.lmse`): `{type: http, url}` (+ `headers` for Bearer mode)
+- **opencode** (`opencode.json` → `mcp.lmse`): `{type: remote, url, enabled: true}` (+ `headers` for Bearer mode)
+- **Devin** (`mcpServers.lmse`): `{transport: HTTP, url}`
+- **Zed** (`context_servers.lmse`): `{url}`
+- **Antigravity** (`mcpServers.lmse`): `{serverUrl}`
+- **Gemini** (`mcpServers.lmse`): `{httpUrl}`
+- **Warp** (`lmse`): `{serverUrl}`
+- **OpenClaw**: `openclaw mcp add lmse --url <url> --transport streamable-http`
 
 After connecting, verify with `tools/list` (35 tools across pages) then `tools/call mailboxes-list {}`.
