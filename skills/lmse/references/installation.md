@@ -35,6 +35,6 @@ composer require letmesendemail/letmesendemail-laravel  # Laravel integration
 
 ## API key
 
-Create keys in the dashboard: user menu → API keys. Copy the full value shown once at creation (keys have no fixed prefix). Always load from the `LETMESENDEMAIL_API_KEY` environment variable — never hardcode.
+Create keys in the dashboard: user menu → API keys. Copy the full value shown once at creation (keys have no fixed prefix). Always load from the `LETMESENDEMAIL_API_KEY` environment variable - never hardcode.
 
 More SDKs (Go, Java, Ruby, Rust, .NET) follow the same pattern: construct a client with the API key, call `client.emails.send(...)`. See each SDK's README for exact signatures.

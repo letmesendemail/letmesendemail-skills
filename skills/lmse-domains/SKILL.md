@@ -1,6 +1,6 @@
 ---
 name: lmse-domains
-description: Use when managing sending domains on LetMeSend.Email — listing domains, verifying DNS (SPF/DKIM/DMARC), and checking deliverability health over time. Always use this skill when the user mentions domain setup, DNS records, verification status, spam-folder problems, or sender reputation on LMSE. No domain can send until it is verified.
+description: Use when managing sending domains on LetMeSend.Email - listing domains, verifying DNS (SPF/DKIM/DMARC), and checking deliverability health over time. Always use this skill when the user mentions domain setup, DNS records, verification status, spam-folder problems, or sender reputation on LMSE. No domain can send until it is verified.
 license: MIT
 metadata:
     author: LetMeSend.Email
@@ -17,17 +17,17 @@ references:
 
 # LMSE Domains
 
-## Verify a domain — MCP
+## Verify a domain - MCP
 
 ```
 domains-list{} → domains-get{id} → add the DNS records it returns → domains-verify{id}
 ```
 
-`domains-get` returns the exact SPF/DKIM/DMARC records to add at your DNS provider. `domains-verify` re-checks DNS — poll it after DNS propagates (up to 48h for slow providers, usually minutes).
+`domains-get` returns the exact SPF/DKIM/DMARC records to add at your DNS provider. `domains-verify` re-checks DNS - poll it after DNS propagates (up to 48h for slow providers, usually minutes).
 
-**Key gotchas:** sending from an unverified domain fails — always verify before first send or campaign. DNS changes are eventually consistent; a failed `domains-verify` right after adding records usually means "wait and retry", not "wrong records".
+**Key gotchas:** sending from an unverified domain fails - always verify before first send or campaign. DNS changes are eventually consistent; a failed `domains-verify` right after adding records usually means "wait and retry", not "wrong records".
 
-## Health — MCP
+## Health - MCP
 
 ```
 domain-health-get{id}      → current status snapshot

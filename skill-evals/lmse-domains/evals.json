@@ -25,7 +25,7 @@
     {
       "id": 3,
       "prompt": "Can I send from a domain I haven't verified yet?",
-      "expected_output": "No — verification is required before any sending.",
+      "expected_output": "No - verification is required before any sending.",
       "files": [],
       "expectations": [
         "States verification is mandatory before sending",

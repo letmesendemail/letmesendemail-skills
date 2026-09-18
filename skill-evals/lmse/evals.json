@@ -15,7 +15,7 @@
     {
       "id": 2,
       "prompt": "Our newsletter goes to 10,000 subscribers. Should I loop emails.send?",
-      "expected_output": "No — routes to the lmse-marketing skill and campaigns instead of looping transactional sends.",
+      "expected_output": "No - routes to the lmse-marketing skill and campaigns instead of looping transactional sends.",
       "files": [],
       "expectations": [
         "Does not recommend looping transactional sends",

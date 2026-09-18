@@ -1,6 +1,6 @@
 # Errors
 
-Shape: `{code, message, suggested_action}`. Follow `suggested_action` — it is written for agents.
+Shape: `{code, message, suggested_action}`. Follow `suggested_action` - it is written for agents.
 
 | Code | Meaning | Do |
 |---|---|---|
@@ -10,4 +10,4 @@ Shape: `{code, message, suggested_action}`. Follow `suggested_action` — it is 
 | `quota_exceeded` | account quota spent (transactional sends) | surface to user; do not retry |
 | `401` (transport) | missing/invalid Bearer key | fix auth setup |
 
-Bulk actions cap at 50 ids per call — split larger batches. Idempotency keys cap at 64 chars. Rate limits: back off and retry with jitter.
+Bulk actions cap at 50 ids per call - split larger batches. Idempotency keys cap at 64 chars. Rate limits: back off and retry with jitter.

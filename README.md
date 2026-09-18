@@ -15,14 +15,14 @@ Then select the ones you wish to install.
 | Skill | Description |
 |---|---|
 | [`lmse`](./skills/lmse) | LetMeSend.Email API: send transactional email, verify addresses, webhooks |
-| [`lmse-mailbox`](./skills/lmse-mailbox) | Agent mailboxes: read, search, triage, draft, send and reply — with inbound-security patterns |
+| [`lmse-mailbox`](./skills/lmse-mailbox) | Agent mailboxes: read, search, triage, draft, send and reply - with inbound-security patterns |
 | [`lmse-marketing`](./skills/lmse-marketing) | Contacts and campaigns (email broadcasts): create, send, schedule, cancel |
 | [`lmse-domains`](./skills/lmse-domains) | Domains: DNS verification, deliverability health checks |
 | [`lmse-mcp`](./skills/lmse-mcp) | Use the LetMeSendEmail MCP server: auth, ability tiers, errors, pagination |
 
 ## MCP Server
 
-The plugin registers the LetMeSendEmail MCP server at `https://mcp.letmesend.email` (streamable HTTP) with 34 tools. It authenticates via OAuth — supported clients walk you through sign-in on first connect. For headless use, a Bearer API key works instead:
+The plugin registers the LetMeSendEmail MCP server at `https://mcp.letmesend.email` (streamable HTTP) with 34 tools. It authenticates via OAuth - supported clients walk you through sign-in on first connect. For headless use, a Bearer API key works instead:
 
 ```
 Authorization: Bearer <api-key>
@@ -37,4 +37,4 @@ Create a key in the LetMeSend.Email dashboard (user menu → API keys), store it
 
 ## License
 
-MIT — Copyright (c) Apsoenx Inc.
+MIT - Copyright (c) Apsoenx Inc.

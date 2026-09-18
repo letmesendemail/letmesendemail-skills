@@ -14,7 +14,7 @@
     {
       "id": 2,
       "prompt": "My agent gets `forbidden` calling mailbox-messages-send. The key works for listing.",
-      "expected_output": "Diagnoses missing mailbox:send ability (Reader vs Full assistant) per abilities.md — not an auth failure.",
+      "expected_output": "Diagnoses missing mailbox:send ability (Reader vs Full assistant) per abilities.md - not an auth failure.",
       "files": [],
       "expectations": [
         "Identifies missing mailbox:send ability",

@@ -1,6 +1,6 @@
 ---
 name: lmse
-description: Use when working with the LetMeSend.Email API — sending transactional emails (single), verifying email addresses, managing API keys, receiving delivery webhooks, or setting up an SDK. Always use this skill when the user mentions LetMeSend.Email, LMSE, or letmesend.email — it contains critical gotchas (SDK error shape, idempotency keys, `from_`/`type_` naming in Python) that prevent common production issues.
+description: Use when working with the LetMeSend.Email API - sending transactional emails (single), verifying email addresses, managing API keys, receiving delivery webhooks, or setting up an SDK. Always use this skill when the user mentions LetMeSend.Email, LMSE, or letmesend.email - it contains critical gotchas (SDK error shape, idempotency keys, `from_`/`type_` naming in Python) that prevent common production issues.
 license: MIT
 metadata:
     author: LetMeSend.Email
@@ -21,9 +21,9 @@ references:
 
 # LetMeSend.Email
 
-LetMeSend.Email is also referred to as **LMSE** for short — treat both names as the same product.
+LetMeSend.Email is also referred to as **LMSE** for short - treat both names as the same product.
 
-## Quick Send — Node.js
+## Quick Send - Node.js
 
 ```typescript
 import { LetMeSendEmail } from "@letmesendemail/letmesendemail-node";
@@ -42,9 +42,9 @@ const email = await client.emails.send({
 console.log("Sent:", email.id, email.status);
 ```
 
-**Key gotchas:** the Node SDK **throws** on API errors (unlike some email SDKs that return `{ data, error }`) — wrap sends in try/catch. Always pass `idempotencyKey` on sends so retries never double-send.
+**Key gotchas:** the Node SDK **throws** on API errors (unlike some email SDKs that return `{ data, error }`) - wrap sends in try/catch. Always pass `idempotencyKey` on sends so retries never double-send.
 
-## Quick Send — Python
+## Quick Send - Python
 
 ```python
 import os
@@ -61,9 +61,9 @@ with LetMeSendEmail(api_key=os.environ["LETMESENDEMAIL_API_KEY"]) as client:
 print(f"Sent! ID: {email.id}, Status: {email.status}")
 ```
 
-**Key gotchas:** Python uses `from_` and `type_` (trailing underscores — `from`/`type` are reserved words). Errors raise `LetMeSendEmailError`. The client is a context manager — use `with` so connections close cleanly.
+**Key gotchas:** Python uses `from_` and `type_` (trailing underscores - `from`/`type` are reserved words). Errors raise `LetMeSendEmailError`. The client is a context manager - use `with` so connections close cleanly.
 
-## Quick Send — MCP tool
+## Quick Send - MCP tool
 
 When acting directly as an agent with the LetMeSendEmail MCP server connected, call `emails-send` (no SDK needed). See the `lmse-mcp` skill for connection setup. Transactional sends count against the account quota; mailbox sends do not.
 

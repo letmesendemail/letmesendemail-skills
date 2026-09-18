@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "prompt": "I scheduled a campaign by mistake — stop it.",
+      "prompt": "I scheduled a campaign by mistake - stop it.",
       "expected_output": "Uses campaigns-cancel and notes it only works before sending starts.",
       "files": [],
       "expectations": [

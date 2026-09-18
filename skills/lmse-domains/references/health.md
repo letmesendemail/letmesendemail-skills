@@ -1,8 +1,8 @@
 # Deliverability health
 
-- `domain-health-get{id}` — current snapshot (verification, DNS alignment, recent signals).
-- `domain-health-check{id}` — triggers fresh checks; use after DNS changes or incidents.
-- `domain-health-history{id}` — trend line; the early-warning system for reputation decay.
+- `domain-health-get{id}` - current snapshot (verification, DNS alignment, recent signals).
+- `domain-health-check{id}` - triggers fresh checks; use after DNS changes or incidents.
+- `domain-health-history{id}` - trend line; the early-warning system for reputation decay.
 
 **Reading the signals:**
 - Rising bounces → dirty list: verify + suppress before next send.
