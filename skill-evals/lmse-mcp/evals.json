@@ -1,0 +1,35 @@
+{
+  "skill_name": "lmse-mcp",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Connect Codex to the LetMeSendEmail MCP server.",
+      "expected_output": "Gives the config.toml block or one-liner with bearer_token_env_var = LETMESENDEMAIL_API_KEY.",
+      "files": [],
+      "expectations": [
+        "References clients.md setup for Codex",
+        "Uses LETMESENDEMAIL_API_KEY env var (not a pasted key)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "My agent gets `forbidden` calling mailbox-messages-send. The key works for listing.",
+      "expected_output": "Diagnoses missing mailbox:send ability (Reader vs Full assistant) per abilities.md — not an auth failure.",
+      "files": [],
+      "expectations": [
+        "Identifies missing mailbox:send ability",
+        "Does not suggest re-authenticating or a new key as the first fix"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "List all messages in a mailbox with 500 emails.",
+      "expected_output": "Cursor pagination: limit/cursor loop on next_cursor while has_more.",
+      "files": [],
+      "expectations": [
+        "Describes cursor loop with next_cursor/has_more",
+        "Does not claim a single call returns everything"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "skill_name": "lmse-marketing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Send our monthly newsletter to all contacts.",
+      "expected_output": "Campaign lifecycle: check contacts, campaigns-create, review via get, send with {campaign_id}, confirm status.",
+      "files": [],
+      "expectations": [
+        "Uses campaigns-create then campaigns-send (not transactional loop)",
+        "campaigns-send called with only campaign_id",
+        "Mentions verifying status via campaigns-get"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I scheduled a campaign by mistake — stop it.",
+      "expected_output": "Uses campaigns-cancel and notes it only works before sending starts.",
+      "files": [],
+      "expectations": [
+        "Uses campaigns-cancel",
+        "Notes the scheduled-only limitation"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Import this 50k purchased email list and blast it.",
+      "expected_output": "Pushes back: verify addresses first, expects bounce/complaint harm, recommends hygiene via contacts + verification.",
+      "files": [],
+      "expectations": [
+        "Recommends verification before importing/sending",
+        "Warns about bounces/complaints or reputation"
+      ]
+    }
+  ]
+}

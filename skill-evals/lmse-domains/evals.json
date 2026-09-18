@@ -1,0 +1,36 @@
+{
+  "skill_name": "lmse-domains",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Set up mail.acme.com for sending with LetMeSend.Email.",
+      "expected_output": "domains-get for exact DNS records, publish SPF/DKIM/DMARC, then domains-verify with retry-on-propagation.",
+      "files": [],
+      "expectations": [
+        "Gets exact records from domains-get (does not invent values)",
+        "Runs domains-verify after publishing",
+        "Mentions propagation delay / retry rather than instant success"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our emails started landing in spam. What do I check?",
+      "expected_output": "Reads domain-health-get/history, checks DNS alignment, bounce/complaint signals, list hygiene.",
+      "files": [],
+      "expectations": [
+        "References health.md tools (get/history)",
+        "Covers both DNS alignment and reputation signals"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Can I send from a domain I haven't verified yet?",
+      "expected_output": "No — verification is required before any sending.",
+      "files": [],
+      "expectations": [
+        "States verification is mandatory before sending",
+        "Does not offer a workaround"
+      ]
+    }
+  ]
+}

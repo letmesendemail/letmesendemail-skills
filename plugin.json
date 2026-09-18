@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lmse",
+  "version": "1.0.0",
+  "description": "Send and receive email, manage mailboxes, domains, contacts and campaigns with LetMeSend.Email",
+  "author": {
+    "name": "LetMeSend.Email",
+    "url": "https://letmesend.email"
+  },
+  "homepage": "https://letmesend.email",
+  "license": "MIT",
+  "keywords": ["email", "letmesendemail", "lmse", "smtp", "mailbox", "campaigns", "agent-inbox"]
+}

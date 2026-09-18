@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "letmesendemail": {
+      "type": "streamable-http",
+      "url": "https://mcp.letmesend.email/",
+      "headers": {
+        "Authorization": "Bearer ${LETMESENDEMAIL_API_KEY}"
+      }
+    }
+  }
+}
