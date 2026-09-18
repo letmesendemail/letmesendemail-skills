@@ -5,7 +5,7 @@ Skills for AI coding agents working with [LetMeSend.Email](https://letmesend.ema
 ## Install
 
 ```bash
-npx skills add <repo>/lmse-skills
+npx skills add <repo>/letmesendemail-skills
 ```
 
 Then select the ones you wish to install.
