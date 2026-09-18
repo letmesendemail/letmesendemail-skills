@@ -1,6 +1,6 @@
 # LetMeSend.Email Skills
 
-Skills for AI coding agents working with [LetMeSend.Email](https://letmesend.email), following the [Agent Skills](https://agentskills.io) format. Includes an MCP server for direct tool access.
+Skills for AI coding agents working with [LetMeSend.Email](https://letmesend.email) (also called **LMSE** for short), following the [Agent Skills](https://agentskills.io) format. Includes an MCP server for direct tool access.
 
 ## Install
 

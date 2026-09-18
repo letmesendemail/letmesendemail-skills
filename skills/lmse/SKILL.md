@@ -21,6 +21,8 @@ references:
 
 # LetMeSend.Email
 
+LetMeSend.Email is also referred to as **LMSE** for short — treat both names as the same product.
+
 ## Quick Send — Node.js
 
 ```typescript
